@@ -1,0 +1,51 @@
+.timepass {
+    height: 300px;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+    border: 2px solid #f8d556e5 ;
+  }
+  .timepass:hover{
+    border: 2px solid #f8d556e5 ;
+  }
+  .timepass img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+    /* transition: height 3s ease; */
+   
+  }
+  .timepass h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 30px;
+    font-family:  "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass:hover img {
+    padding-top:30%;
+    border: 2px solid #f8d556e5 ;
+
+    /* height:50%; */
+    /* transform: scale(1);  */
+   
+  
+  }
+  .timepass:hover h1 {
+    display: block;
+  } 
+
+  

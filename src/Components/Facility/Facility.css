@@ -1,0 +1,391 @@
+.Facility {
+  display: flex;
+  justify-content: center;
+}
+.fcWrapper {
+  height: 68vh;
+  width: 90%;
+  background-color: white;
+  box-shadow: 2px 3px 10px #f8d55689;
+  border-radius: 20px;
+}
+.fcheading {
+  padding: 30px;
+}
+.fcheading h1 {
+  color: #391710;
+  font-size: 40px;
+  font-weight: bold;
+  word-spacing: 3px;
+  border-bottom: 3px solid #391710;
+  display: inline;
+}
+.facilityWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.facilityWrapper img {
+  height: 340px;
+  width: 550px;
+  border-radius: 50px;
+
+  border: 3px solid #f8d556e5;
+}
+.fcparagraph {
+  font-size: 34px;
+  line-height: 40px;
+  text-align-last: left;
+  word-spacing: 3px;
+  font-weight: bold;
+  padding-top: 20px;
+  color: #391710;
+}
+.fcbtn {
+  padding: 20px;
+}
+.fcbtn button {
+  padding: 10px;
+  background-color: #391710;
+  color: #f8d456;
+  font-family: "Tangerine", cursive;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 1px solid #f8d556e5;
+  word-spacing: 1px;
+}
+
+@media screen and (max-width:1300px) {
+ 
+  .fcWrapper {
+    height: 72vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+  }
+  .fcheading {
+    padding: 30px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .facilityWrapper img {
+    height: 318px;
+    width: 550px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 24px;
+    line-height: 40px;
+    text-align-last: left;
+    word-spacing: 4px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 0px;
+  }
+  .fcbtn button {
+    padding: 7px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}
+@media screen and (max-width:1100px) {
+  .fcWrapper {
+    height: 75vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+  }
+  .fcheading {
+    padding: 30px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  .facilityWrapper img {
+    height: 340px;
+    width: 450px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 21px;
+    line-height: 40px;
+    text-align-last: left;
+    word-spacing: 4px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 0px;
+  }
+  .fcbtn button {
+    padding: 7px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}
+@media screen and  (min-width:768px) and (max-width:1000px) {
+  .fcWrapper {
+    height: 120vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 20px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .facilityWrapper img {
+    height: 350px;
+    width: 520px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 25px;
+    
+    text-align-last: left;
+  
+    font-weight: bold;
+    padding-top: 20px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 0px;
+  }
+  .fcbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}
+@media screen and  (min-width:500px) and (max-width:768px) {
+  .fcWrapper {
+    height: 120vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 20px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 35px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .facilityWrapper img {
+    height: 300px;
+    width: 420px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 25px;
+    
+    text-align-last: left;
+  
+    font-weight: bold;
+    padding-top: 20px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 20px;
+  }
+  .fcbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}
+@media screen and  (min-width:375px) and (max-width:500px) {
+  .fcWrapper {
+    height: 133vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 20px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 29px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .facilityWrapper img {
+    height: 287px;
+    width: 338px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 23px;
+    
+    text-align-last: left;
+  
+    font-weight: bold;
+    padding-top: 2px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 20px;
+  }
+  .fcbtn button {
+    padding: 7px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}
+@media screen and  (max-width:375px) {
+  .fcWrapper {
+    height: 107vh;
+    width: 90%;
+    background-color: white;
+    box-shadow: 2px 3px 10px #f8d55689;
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 20px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 24px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .facilityWrapper img {
+    height: 204px;
+    width: 258px;
+    border-radius: 50px;
+  
+    border: 3px solid #f8d556e5;
+  }
+  .fcparagraph {
+    font-size: 21px;
+    line-height: 31px;
+    text-align-last: left;
+  
+    font-weight: bold;
+    padding-top: 2px;
+    color: #391710;
+  }
+  .fcbtn {
+    padding: 20px;
+  }
+  .fcbtn button {
+    padding: 7px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+}

@@ -1,0 +1,492 @@
+.mainserv {
+  display: flex;
+  justify-content: center;
+}
+.serviceWrap {
+  height: 85vh;
+  width: 90%;
+
+  background-image: url("../../Assets/bgimage.jpg");
+  background-repeat: no-repeat;
+  box-shadow: 2px 3px 8px #f8d55689;
+}
+.serviceWrap .heading {
+  padding: 50px;
+}
+.serviceWrap .heading h1 {
+  color: #391710;
+  font-size: 40px;
+  font-weight: bold;
+  word-spacing: 3px;
+  border-bottom: 3px solid #391710;
+  display: inline;
+}
+
+.serWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.serbtn {
+  padding: 70px;
+}
+.serbtn button {
+  padding: 10px;
+  background-color: #391710;
+  color: #f8d456;
+  font-family: "Tangerine", cursive;
+  font-size: 30px;
+  border-radius: 5px;
+  border: 1px solid #f8d556e5;
+  word-spacing: 1px;
+}
+.timepass1 {
+  height: 300px;
+  width: 270px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 2px 3px 8px rgb(105, 104, 104);
+}
+.timepass1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: padding 0.9s ease;
+}
+.timepass1 h1 {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #391710;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Tangerine", cursive;
+  font-weight: bold;
+}
+.timepass1:hover img {
+  padding-top: 30%;
+}
+.timepass1:hover h1 {
+  display: block;
+}
+@media screen and (max-width: 1200px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+  }
+  .serviceWrap {
+    height: 85vh;
+    width: 100%;
+
+    background-image: url("../../Assets/bgimage.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px #f8d55689;
+  }
+  .serviceWrap .heading {
+    padding: 50px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+
+  .serWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+  .timepass1 {
+    height: 277px;
+    width: 253px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+  }
+  .timepass1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+  }
+  .timepass1 h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass1:hover img {
+    padding-top: 30%;
+  }
+  .timepass1:hover h1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 850px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+  }
+  .serviceWrap {
+    height: 82vh;
+    width: 100%;
+
+    background-image: url("../../Assets/bgimage.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px #f8d55689;
+  }
+  .serviceWrap .heading {
+    padding: 50px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+
+  .serWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+  .timepass1 {
+    height: 261px;
+    width: 230px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+  }
+  .timepass1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+  }
+  .timepass1 h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 27px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass1:hover img {
+    padding-top: 30%;
+  }
+  .timepass1:hover h1 {
+    display: block;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+  }
+  .serviceWrap {
+    height: 82vh;
+    width: 100%;
+
+    background-image: url("../../Assets/bgimage.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px #f8d55689;
+  }
+  .serviceWrap .heading {
+    padding: 50px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 40px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+
+  .serWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+  .timepass1 {
+    height: 244px;
+    width: 177px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+  }
+  .timepass1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+  }
+  .timepass1 h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass1:hover img {
+    padding-top: 30%;
+  }
+  .timepass1:hover h1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+  }
+  .serviceWrap {
+    height: 79vh;
+    width: 100%;
+
+    background-image: url("../../Assets/bgimage.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px #f8d55689;
+  }
+  .serviceWrap .heading {
+    padding: 50px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 3px solid #391710;
+    display: inline;
+  }
+
+  .serWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+  #card3 {
+    display: none;
+  }
+  .timepass1 {
+    height: 244px;
+    width: 177px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+  }
+  .timepass1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+  }
+  .timepass1 h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass1:hover img {
+    padding-top: 30%;
+  }
+  .timepass1:hover h1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+  }
+  .serviceWrap {
+    height: 69vh;
+    width: 100%;
+
+    background-image: url("../../Assets/bgimage.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 2px 3px 8px #f8d55689;
+  }
+  .serviceWrap .heading {
+    padding: 50px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 3px;
+    border-bottom: 2px solid #391710;
+    display: inline;
+  }
+
+  .serWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #391710;
+    color: #f8d456;
+    font-family: "Tangerine", cursive;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid #f8d556e5;
+    word-spacing: 1px;
+  }
+  #card3,
+  #card2 {
+    display: none;
+  }
+  .timepass1 {
+    height: 200px;
+    width: 172px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 2px 3px 8px rgb(105, 104, 104);
+  }
+  .timepass1 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    transition: padding 0.9s ease;
+  }
+  .timepass1 h1 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #391710;
+    text-align: center;
+    font-size: 24px;
+    font-family: "Tangerine", cursive;
+    font-weight: bold;
+  }
+  .timepass1:hover img {
+    padding-top: 30%;
+  }
+  .timepass1:hover h1 {
+    display: block;
+  }
+}
