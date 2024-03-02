@@ -1,19 +1,29 @@
 import React from "react";
+import {useState, useEffect } from "react";
 import image from "../../Assets/frontImage.jpg";
 import "./About.css";
 import { Link } from "react-router-dom";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { HashLink } from "react-router-hash-link";
 function About() {
+ useEffect(()=>{
+  Aos.init({duration:3000})
+ },[])
+
   return (
     <div className="about">
       <div className="aboutWrapper">
+      <div className="AbWrapper">
+      <img style={{
+         
+        }} src={image} alt="img"  data-aos="zoom-in"/>
+      <div>
         <div className="heading">
-          <h1>About Us</h1>
+          <h1  data-aos="new-animation" >About Us</h1>
         </div>
-        <div className="AbWrapper">
-          <img src={image} alt="img" />
-          <div>
-            <div className="paragraph">
+       
+            <div  data-aos="new-animation" className="paragraph">
               Kamal Celebration Established in 2024 . Events that can be hosted
               like wedding , pre & post  wedding functions birthday
               parties Conference etc. as we have 4 types of Hall ranging from
@@ -27,7 +37,9 @@ function About() {
             </div>
             <div className="abbtn">
               <Link to="/about">
-                <button>Know More </button>
+              <HashLink to={'/about#target-sec'}>
+                <button data-aos="fade-up" data-aos-duration="2000" >Know More </button>
+                </HashLink>
               </Link>
             </div>
           </div>

@@ -12,21 +12,20 @@
 .info {
   width: 500px;
   height: 400px;
-  background-color: white;
-  border-radius: 30px;
-  border: 1px solid #f8d556e5;
-  box-shadow: 2px 3px 10px #f8d55689;
+  background-color:#f6f3ea;
+  border-radius: 20px;
+  
 }
 .Coninfo {
-  font-size: 40px;
-  text-align-last: left;
+  font-size: 25px;
+  text-align: left;
   padding: 29px;
   font-weight: bold;
 }
 .Coninfo span {
-  font-size: 30px;
+  font-size: 23px;
   padding: 0px 20px;
-  font-weight: bold;
+  
 }
 .icon1 {
     display: flex;
@@ -54,21 +53,19 @@
       .info {
         width: 406px;
         height: 361px;
-        background-color: white;
-        border-radius: 30px;
-        border: 1px solid #f8d556e5;
-        box-shadow: 2px 3px 10px #f8d55689;
+        background-color:#f6f3ea;
+      
     }
     .Coninfo {
-        font-size: 30px;
+        font-size: 20px;
         text-align-last: left;
         padding: 29px;
         font-weight: bold;
     }
       .Coninfo span {
-        font-size: 22px;
-        padding: 0px 20px;
-        font-weight: bold;
+        font-size: 19px;
+        padding: 0px 15px;
+     
       }
       .map{
         width: 406px;
@@ -83,7 +80,7 @@
         gap: 30px;
         align-items: center;
         color: #391710;
-        margin-top: 60px;
+        margin-top: 221px;
       
         height: 100%;
         width: 100%;
@@ -92,22 +89,20 @@
       .info {
         width: 513px;
         height: 338px;
-        background-color: white;
-        border-radius: 30px;
-        border: 1px solid #f8d556e5;
-        box-shadow: 2px 3px 10px #f8d55689;
+        background-color:#f6f3ea;
+       
     }
     .Coninfo {
-        font-size: 37px;
-        text-align-last: left;
+        font-size: 25px;
+        text-align: left;
         align-items: center;
         padding: 20px;
-        font-weight: bold;
+       
     }
       .Coninfo span {
-        font-size: 30px;
-        padding: 0px 20px;
-        font-weight: bold;
+        font-size: 21px;
+        padding: 0px 15px;
+      
       }
       .map{
         width: 513px;
@@ -133,35 +128,33 @@
         gap: 30px;
         align-items: center;
         color: #391710;
-        margin-top: 60px;
+        margin-top: 179px;
       
         height: 100%;
         width: 100%;
       }
       
       .info {
-        width: 306px;
-        height: 276px;
-        background-color: white;
+        width: 310px;
+        height: 316px;
+        background-color: #f6f3ea;
         border-radius: 30px;
-        border: 1px solid #f8d556e5;
-        box-shadow: 2px 3px 10px #f8d55689;
     }
     .Coninfo {
-        font-size: 25px;
-        text-align-last: left;
+        font-size: 19px;
+        text-align: left;
         align-items: center;
         padding: 18px;
-        font-weight: bold;
+       
     }
       .Coninfo span {
-        font-size: 21px;
-        padding: 0px 20px;
-        font-weight: bold;
+        font-size: 14px;
+        padding: 0px 15px;
+       
       }
       .map{
-        width: 306px;
-        height: 276px;
+        width: 310px;
+        height: 316px;
       }
       .icon1 {
         display: flex;

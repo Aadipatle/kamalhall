@@ -25,16 +25,17 @@ function Footer() {
         </div>
         <div className="infof">
           <div className="Coninfof">
-            {" "}
-            Email-Id:<span>kamalcelebrationsgroup@gmail.com</span>
+          
+            <h3>Email-Id:</h3>
+            <h4>kamalcelebrationsgroup@gmail.com</h4>
           </div>
           <div className="Coninfof">
-            Address:
-            <span>
+            <h3>Address:</h3>
+            <h4>
               Plot no 4, Rajeshwar Nagar, Besa-Pipla road, Nagpur, 440034
-              <br />
-              9209841329 & 9860945554
-            </span>
+             
+              <h4>9209841329 & 9860945554</h4>
+            </h4>
             <div className="iconf">
               <div>
                 <a href=" https://wa.me/+919209841329">

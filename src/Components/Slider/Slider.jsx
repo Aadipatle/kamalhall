@@ -14,8 +14,9 @@ import "swiper/css/navigation";
 
 import "./Slider.css";
 
-import { EffectFade, Autoplay, Navigation } from "swiper/modules";
+import { EffectFade, Autoplay} from "swiper/modules";
 import { useNavigate } from "react-router-dom";
+import Frontpage from "../Frontpage";
 
 export default function Slider() {
   const navigate = useNavigate();
@@ -32,33 +33,25 @@ export default function Slider() {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[EffectFade, Autoplay, Navigation]}
-        className="mySwiper"
+       
+        modules={[EffectFade, Autoplay]}
+        
       >
-        <SwiperSlide>
+        <SwiperSlide className="custom-slide">
           <img className="slide-content" src={image1} alt="img" />{" "}
-          <button onClick={handleClick} className="slide-button">
-            Enquiry Now
-          </button>
+
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="custom-slide">
           <img className="slide-content" src={image2} alt="img" />
-          <button onClick={handleClick} className="slide-button">
-            Enquiry Now
-          </button>
+         
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="custom-slide">
           <img className="slide-content" src={image3} alt="img" />
-          <button onClick={handleClick} className="slide-button">
-            Enquiry Now
-          </button>
+         
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="custom-slide">
           <img className="slide-content" src={image4} alt="img" />
-          <button onClick={handleClick} className="slide-button">
-            Enquiry Now
-          </button>
+         
         </SwiperSlide>
       </Swiper>
     </div>

@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Switch, ScrollRestoration } from "react-router-dom";
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import PgService from "./Pages/PgService/PgService";
@@ -12,14 +12,16 @@ import Book from "./Admin/Book";
 import Enquiry2 from "./Admin/Enquiry2";
 import Login from "./Admin/Login/Login";
 import ProtectedRoute from "./ProtectedRoute";
+import ScrollToTop from "./Scroll";
+
 
 
 function App() {
   const [open,setOpen] = useState(false)
   return (
     <div className="App">
-      <Header />
-
+      <Header/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

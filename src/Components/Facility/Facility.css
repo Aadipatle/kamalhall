@@ -1,265 +1,223 @@
 .Facility {
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .fcWrapper {
-  height: 68vh;
+  height: auto;
   width: 90%;
-  background-color: white;
-  box-shadow: 2px 3px 10px #f8d55689;
-  border-radius: 20px;
+  background-color: #f6f3ea;
 }
 .fcheading {
   padding: 30px;
 }
 .fcheading h1 {
   color: #391710;
-  font-size: 40px;
+  font-size: 33px;
   font-weight: bold;
   word-spacing: 3px;
-  border-bottom: 3px solid #391710;
+
+  font-family: "Cinzel", serif;
   display: inline;
 }
 .facilityWrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .facilityWrapper img {
-  height: 340px;
-  width: 550px;
-  border-radius: 50px;
-
-  border: 3px solid #f8d556e5;
+  height: 448px;
+  width: 724px;
+  margin-top: -127px;
 }
 .fcparagraph {
-  font-size: 34px;
+  font-size: 21px;
   line-height: 40px;
   text-align-last: left;
   word-spacing: 3px;
-  font-weight: bold;
-  padding-top: 20px;
+  font-weight: 300;
+  padding: 20px;
   color: #391710;
+}
+[data-aos="new-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1.3;
+  }
 }
 .fcbtn {
   padding: 20px;
 }
 .fcbtn button {
-  padding: 10px;
-  background-color: #391710;
-  color: #f8d456;
-  font-family: "Tangerine", cursive;
-  font-size: 30px;
+  padding: 10px 40px;
+  background-color: #2f4d4b;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 21px;
   border-radius: 5px;
-  border: 1px solid #f8d556e5;
+
   word-spacing: 1px;
 }
 
-@media screen and (max-width:1300px) {
+@media screen and (max-width: 1300px) {
+  .fcWrapper {
+    height: auto;
+    width: 90%;
+    background-color: #f6f3ea;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 30px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 31px;
+    font-weight: bold;
+    word-spacing: 3px;
  
-  .fcWrapper {
-    height: 72vh;
-    width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
-  }
-  .fcheading {
-    padding: 30px;
-  }
-  .fcheading h1 {
-    color: #391710;
-    font-size: 40px;
-    font-weight: bold;
-    word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+    font-family: "Cinzel", serif;
     display: inline;
   }
+  
   .facilityWrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .facilityWrapper img {
-    height: 318px;
-    width: 550px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
-  }
-  .fcparagraph {
-    font-size: 24px;
-    line-height: 40px;
-    text-align-last: left;
-    word-spacing: 4px;
-    font-weight: bold;
-    padding-top: 20px;
-    color: #391710;
-  }
-  .fcbtn {
-    padding: 0px;
-  }
-  .fcbtn button {
-    padding: 7px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 30px;
-    border-radius: 5px;
-    border: 1px solid #f8d556e5;
-    word-spacing: 1px;
-  }
-}
-@media screen and (max-width:1100px) {
-  .fcWrapper {
-    height: 75vh;
-    width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
-  }
-  .fcheading {
-    padding: 30px;
-  }
-  .fcheading h1 {
-    color: #391710;
-    font-size: 40px;
-    font-weight: bold;
-    word-spacing: 3px;
-    border-bottom: 3px solid #391710;
-    display: inline;
-  }
-  .facilityWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 10px;
-  }
-  .facilityWrapper img {
-    height: 340px;
-    width: 450px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
+    height: 448px;
+    width: 724px;
+    margin-top: -127px;
+
+    
   }
   .fcparagraph {
     font-size: 21px;
     line-height: 40px;
     text-align-last: left;
     word-spacing: 4px;
-    font-weight: bold;
-    padding-top: 20px;
+    font-weight: 300;
+    padding-top: 10px;
     color: #391710;
+    padding: 10px;
   }
   .fcbtn {
-    padding: 0px;
+    padding: 20px;
   }
   .fcbtn button {
-    padding: 7px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 21px;
+    border-radius: 5px;
+  
+    word-spacing: 1px;
+  }
+  .abbtn button:hover {
+    letter-spacing: 2px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .fcWrapper {
+    height: auto;
+    width: 90%;
+    background-color: #f6f3ea;
+  
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 30px;
+  }
+  .fcheading h1 {
+    color: #391710;
     font-size: 30px;
-    border-radius: 5px;
-    border: 1px solid #f8d556e5;
-    word-spacing: 1px;
-  }
-}
-@media screen and  (min-width:768px) and (max-width:1000px) {
-  .fcWrapper {
-    height: 120vh;
-    width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
-    padding: 10px;
-  }
-  .fcheading {
-    padding: 20px;
-  }
-  .fcheading h1 {
-    color: #391710;
-    font-size: 40px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+   
+    font-family: "Cinzel", serif;
     display: inline;
   }
   .facilityWrapper {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
   .facilityWrapper img {
-    height: 350px;
-    width: 520px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
+    height: 399px;
+    width: 635px;
+    margin-top: -121px;
   }
   .fcparagraph {
-    font-size: 25px;
-    
+    font-size: 21px;
+    line-height: 40px;
     text-align-last: left;
-  
-    font-weight: bold;
-    padding-top: 20px;
+    word-spacing: 4px;
+    font-weight: 300;
+    padding-top: 10px;
     color: #391710;
+    padding: 10px;
   }
   .fcbtn {
-    padding: 0px;
+    padding: 20px;
   }
   .fcbtn button {
-    padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 25px;
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 21px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+  
     word-spacing: 1px;
   }
+
+  .fcbtn button:hover {
+    letter-spacing: 2px;
+  }
 }
-@media screen and  (min-width:500px) and (max-width:768px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   .fcWrapper {
-    height: 120vh;
+    height: auto;
     width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
+    background-color: #f6f3ea;
+  
     padding: 10px;
   }
   .fcheading {
-    padding: 20px;
+    padding: 30px;
   }
   .fcheading h1 {
     color: #391710;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+   
+    font-family: "Cinzel", serif;
     display: inline;
   }
   .facilityWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
     align-items: center;
   }
   .facilityWrapper img {
-    height: 300px;
-    width: 420px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
+    height: 368px;
+    width: 570px;
+    margin-top: -121px;
   }
   .fcparagraph {
-    font-size: 25px;
-    
+    font-size: 21px;
+    line-height: 40px;
     text-align-last: left;
-  
-    font-weight: bold;
+    word-spacing: 4px;
+    font-weight: 300;
     padding-top: 20px;
     color: #391710;
   }
@@ -267,79 +225,84 @@
     padding: 20px;
   }
   .fcbtn button {
-    padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 25px;
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 21px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+  
     word-spacing: 1px;
   }
+
+  .fcbtn button:hover {
+    letter-spacing: 2px;
+  }
 }
-@media screen and  (min-width:375px) and (max-width:500px) {
+@media screen and (min-width: 630px) and (max-width: 768px) {
   .fcWrapper {
-    height: 133vh;
+    height: auto;
     width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
+    background-color:#f6f3ea;
+  
     padding: 10px;
   }
   .fcheading {
-    padding: 20px;
+    padding: 30px;
   }
   .fcheading h1 {
     color: #391710;
-    font-size: 29px;
+    font-size: 27px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+   
+    font-family: "Cinzel", serif;
     display: inline;
   }
   .facilityWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
     align-items: center;
   }
   .facilityWrapper img {
-    height: 287px;
-    width: 338px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
+    height: 302px;
+    width: 451px;
+    margin-top: -105px;
   }
   .fcparagraph {
-    font-size: 23px;
-    
+    font-size: 21px;
+    line-height: 40px;
     text-align-last: left;
-  
-    font-weight: bold;
-    padding-top: 2px;
+    word-spacing: 4px;
+    font-weight: 300;
+    padding-top: 10px;
     color: #391710;
+    padding: 10px;
   }
   .fcbtn {
     padding: 20px;
   }
   .fcbtn button {
-    padding: 7px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 25px;
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 21px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+  
     word-spacing: 1px;
   }
+
+  .fcbtn button:hover {
+    letter-spacing: 2px;
+  }
 }
-@media screen and  (max-width:375px) {
+@media screen and (min-width: 550px) and (max-width: 630px) {
   .fcWrapper {
-    height: 107vh;
-    width: 90%;
-    background-color: white;
-    box-shadow: 2px 3px 10px #f8d55689;
-    border-radius: 20px;
+    height: auto;
+    width: 80%;
+    background-color:#f6f3ea;
     padding: 10px;
   }
   .fcheading {
@@ -350,42 +313,103 @@
     font-size: 24px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+   
+    font-family: "Cinzel", serif;
     display: inline;
   }
   .facilityWrapper {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    justify-content: center;
     align-items: center;
   }
   .facilityWrapper img {
-    height: 204px;
-    width: 258px;
-    border-radius: 50px;
-  
-    border: 3px solid #f8d556e5;
+    height: 274px;
+    width: 402px;
+    margin-top: -127px;
   }
   .fcparagraph {
-    font-size: 21px;
-    line-height: 31px;
+    font-size: 17px;
+    line-height: 30px;
     text-align-last: left;
-  
-    font-weight: bold;
-    padding-top: 2px;
+    word-spacing: 4px;
+    font-weight: 300;
+    padding-top: 10px;
     color: #391710;
+    padding: 10px;
   }
   .fcbtn {
     padding: 20px;
   }
   .fcbtn button {
-    padding: 7px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 25px;
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+  
     word-spacing: 1px;
   }
+  .fcbtn button:hover {
+    letter-spacing: 2px;
+  }
 }
+@media screen and (max-width: 550px)  {
+  .fcWrapper {
+    height: auto;
+    width: 80%;
+    background-color: #f6f3ea;
+    padding: 10px;
+  }
+  .fcheading {
+    padding: 15px;
+  }
+  .fcheading h1 {
+    color: #391710;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 3px;
+  
+    font-family: "Cinzel", serif;
+    display: inline;
+  }
+  .facilityWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .facilityWrapper img {
+    height: 147px;
+    width: 230px;
+    margin-top: -127px;
+}
+  .fcparagraph {
+    font-size: 15px;
+  line-height: 27px;
+  text-align-last: center;
+  word-spacing: 4px;
+  font-weight: 300;
+  /* padding-top: 10px; */
+  color: #391710;
+  padding: 10px;
+  }
+  .fcbtn {
+    padding: 20px;
+  }
+  .fcbtn button {
+    padding: 10px 40px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
+    border-radius: 5px;
+  
+    word-spacing: 1px;
+  }
+  .fcbtn button:hover {
+    letter-spacing: 2px;
+  }
+}
+

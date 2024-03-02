@@ -9,6 +9,11 @@ import valet from "../../Assets/Component 12.jpg";
 import guest from "../../Assets/guest.jpg";
 import stage from "../../Assets/stage.jpeg";
 import "./PgService.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Autoplay} from "swiper/modules";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
 
 function PgService() {
   return (
@@ -44,7 +49,7 @@ function PgService() {
               </div>
               <div className="pserWrapper">
                 <div className="timepass">
-                  <h1>Bridal And Dressing Room</h1>
+                  <h1>Bridal And Groom Dressing Room</h1>
                   <img src={dress} alt="img" />
                 </div>
                 <div className="timepass">
@@ -63,6 +68,78 @@ function PgService() {
                 <img src={guest} alt="img" />
               </div>
             </div>
+
+            <div className="mobile-v">
+            <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={"auto"}
+            coverflowEffect={{
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            }}
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
+            }}
+         
+            modules={[EffectCoverflow,Autoplay]}
+            className="Swiper-Wrap"
+          >
+            <SwiperSlide className="swiper_Slide" >
+               
+                <img className="sermg" src={Dj} alt="img" />
+                <div  className="ser"><p>In House DJ</p> </div>
+               
+             
+            </SwiperSlide>
+            <SwiperSlide className="swiper_Slide" >
+              
+                <img className="sermg" src={Decor} alt="img" />
+                <div className="ser">In House Decoration</div>
+             
+            </SwiperSlide>
+            <SwiperSlide className="swiper_Slide"  >
+               
+                <img className="sermg" src={Cater} alt="img" />
+                <div className="ser">In House Catering</div>
+             
+            </SwiperSlide>
+            <SwiperSlide className="swiper_Slide"  >
+               
+                <img className="sermg" src={dress} alt="img" />
+                <div className="ser">Bridal and Groom Dressing Room</div>
+             
+            </SwiperSlide>
+            <SwiperSlide className="swiper_Slide"  >
+               
+            <img className="sermg" src={parking} alt="img" />
+            <div className="ser">Parking Area</div>
+         
+        </SwiperSlide>
+        <SwiperSlide className="swiper_Slide"  >
+               
+            <img className="sermg" src={valet} alt="img" />
+            <div className="ser">Valet Parking</div>
+         
+        </SwiperSlide>
+        <SwiperSlide className="swiper_Slide"  >
+               
+            <img className="sermg" src={guest} alt="img" />
+            <div className="ser">Guest Accomodation</div>
+         
+        </SwiperSlide>
+          </Swiper>
+        </div>
+
+
+
+
+
             <div className="contwrap">
               <div className="sercont">
                 Kamal Celebrations offers you a wide range of services which can

@@ -1,27 +1,42 @@
 import React from "react";
+import { useEffect } from "react";
 import "./about.css";
 import image from "../../Assets/Group 46.jpg";
 import frontimg from "../../Assets/frontImage.jpg";
 import chair from "../../Assets/Chair.jpeg";
 import top from "../../Assets/topView.jpg";
+import mobile from '../../Assets/mobileFrontImage.jpg'
+import ScrollToTop from "../../Scroll";
+import Aos from "aos";
+import "aos/dist/aos.css";
+
 
 function About() {
+ 
+  
+
   return (
+    
     <div className="mainab">
+    
       <div className="wrapperabout">
         <div className="container">
-          <img src={image} alt="img" />
+          <img src={image} alt="img"  />
+          
         </div>
-        <div className="heading1">About Us</div>
+       
+        <div className="heading1">About Us </div>
       </div>
       <div className="containerabdes">
         <div className="abcontWrapper">
-          <div className="cont1">
-            <div className="abheading">
-              Introducing You About Kamal Celebrations
-            </div>
+          <div className="cont1" id="target-sec" >
+          
             <div className="wrap1">
-              <img className="abimgwrap" src={frontimg} alt="img" />
+            <div className="abheading">
+            Introducing You About Kamal Celebrations
+          </div>
+              <img className="abimgwrap" src={frontimg} alt="img" data-aos="flip-up" data-aos-duration="2000" />
+             
               <div className="abparagraph">
                 Kamal Celebration Established in 2024 . Events that can be
                 hosted like wedding , pre & post  wedding functions
@@ -43,9 +58,10 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="cont1">
-            <div className="abheading">Facility And Capacity</div>
+          <div className="cont1" id="target-section">
+            <div className="abheading" >Facility And Capacity</div>
             <div className="wrap1">
+            <img className="abimgwrap" src={chair} alt="img" data-aos="flip-down" data-aos-duration="2000"  />
               <div className="abparagraph1">
                 Kamal Celebrations offers their event spaces as indoor banquet
                 halls which can easily accommodate a crowd up to 1000
@@ -62,13 +78,13 @@ function About() {
                 there for you all the time and ensure that all your functions
                 are carried out with much ease and smoothness.
               </div>
-              <img className="abimgwrap" src={chair} alt="img" />
+            
             </div>
           </div>
           <div className="cont1">
             <div className="abheading">How To Reach Kamal Celebrations</div>
             <div className="wrap1">
-              <img className="abimgwrap" src={top} alt="img" />
+              <img className="abimgwrap" src={top} alt="img" data-aos="flip-up" data-aos-duration="2000"  />
               <div className="abparagraph1">
                 Kamal Celebrations is located in Besa-Pipla (Nagpur). The
                 nearest major airport is 

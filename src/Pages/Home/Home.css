@@ -1,58 +1,67 @@
+
+
 .mainserv {
   display: flex;
   justify-content: center;
+  margin-top: 0px;
 }
 .serviceWrap {
-  height: 85vh;
-  width: 90%;
+  height: auto;
+  width: 100%;
 
   background-image: url("../../Assets/bgimage.jpg");
   background-repeat: no-repeat;
   box-shadow: 2px 3px 8px #f8d55689;
+}
+.mobileimg{
+  display: none;
+}
+.homelogo{
+  display: none;
 }
 .serviceWrap .heading {
   padding: 50px;
 }
 .serviceWrap .heading h1 {
   color: #391710;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: bold;
   word-spacing: 3px;
-  border-bottom: 3px solid #391710;
+
   display: inline;
 }
 
 .serWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .serbtn {
   padding: 70px;
 }
 .serbtn button {
   padding: 10px;
-  background-color: #391710;
-  color: #f8d456;
-  font-family: "Tangerine", cursive;
-  font-size: 30px;
+  background-color: #2f4d4b;
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 16px;
   border-radius: 5px;
-  border: 1px solid #f8d556e5;
+
   word-spacing: 1px;
 }
 .timepass1 {
-  height: 300px;
-  width: 270px;
+  height: 350px;
+  width: 300px;
   background-color: rgb(255, 255, 255);
   position: relative;
   overflow: hidden;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   box-shadow: 2px 3px 8px rgb(105, 104, 104);
 }
 .timepass1 img {
   width: 100%;
   height: 100%;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   transition: padding 0.9s ease;
 }
 .timepass1 h1 {
@@ -67,9 +76,9 @@
   box-sizing: border-box;
   color: #391710;
   text-align: center;
-  font-size: 30px;
-  font-family: "Tangerine", cursive;
-  font-weight: bold;
+  font-size: 26px;
+  font-family: "Roboto Flex", sans-serif;
+  /* font-weight: bold; */
 }
 .timepass1:hover img {
   padding-top: 30%;
@@ -77,28 +86,48 @@
 .timepass1:hover h1 {
   display: block;
 }
-@media screen and (max-width: 1200px) {
-  .mainserv {
-    display: flex;
-    justify-content: center;
-  }
-  .serviceWrap {
-    height: 85vh;
-    width: 100%;
+.Swiper-Wrap {
+  width: 100%;
+  margin-top: -26px;
+}
 
-    background-image: url("../../Assets/bgimage.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 2px 3px 8px #f8d55689;
-  }
-  .serviceWrap .heading {
-    padding: 50px;
-  }
+.swiperSlide {
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.882);
+  width: 194px;
+  height: 288px;
+  border-radius: 10px;
+}
+
+.swiperSlide .serimg {
+  display: block;
+  width: 194px;
+  height: 266px;
+  position: relative;
+}
+.swiperSlide .sername {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  bottom: 20%;
+  left: 25%;
+  right: 25%;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.mobile-view {
+  display: none;
+}
+
+@media screen and (min-width: 849px) and (max-width: 1200px) {
   .serviceWrap .heading h1 {
     color: #391710;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+    margin-top: 0px;
+
     display: inline;
   }
 
@@ -112,27 +141,27 @@
   }
   .serbtn button {
     padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 30px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+
     word-spacing: 1px;
   }
   .timepass1 {
-    height: 277px;
-    width: 253px;
+    height: 300px;
+    width: 250px;
     background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     box-shadow: 2px 3px 8px rgb(105, 104, 104);
   }
   .timepass1 img {
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     transition: padding 0.9s ease;
   }
   .timepass1 h1 {
@@ -147,9 +176,8 @@
     box-sizing: border-box;
     color: #391710;
     text-align: center;
-    font-size: 30px;
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
+    font-size: 23px;
+    font-family: "Roboto Flex", sans-serif;
   }
   .timepass1:hover img {
     padding-top: 30%;
@@ -158,28 +186,14 @@
     display: block;
   }
 }
-@media screen and (max-width: 850px) {
-  .mainserv {
-    display: flex;
-    justify-content: center;
-  }
-  .serviceWrap {
-    height: 82vh;
-    width: 100%;
-
-    background-image: url("../../Assets/bgimage.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 2px 3px 8px #f8d55689;
-  }
-  .serviceWrap .heading {
-    padding: 50px;
-  }
+@media screen and (min-width: 768px) and (max-width: 850px) {
   .serviceWrap .heading h1 {
     color: #391710;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+    margin-top: 0px;
+
     display: inline;
   }
 
@@ -193,27 +207,27 @@
   }
   .serbtn button {
     padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 30px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 16px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+
     word-spacing: 1px;
   }
   .timepass1 {
-    height: 261px;
+    height: 280px;
     width: 230px;
     background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     box-shadow: 2px 3px 8px rgb(105, 104, 104);
   }
   .timepass1 img {
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     transition: padding 0.9s ease;
   }
   .timepass1 h1 {
@@ -228,9 +242,8 @@
     box-sizing: border-box;
     color: #391710;
     text-align: center;
-    font-size: 27px;
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
+    font-size: 21px;
+    font-family: "Roboto Flex", sans-serif;
   }
   .timepass1:hover img {
     padding-top: 30%;
@@ -240,27 +253,13 @@
   }
 }
 @media screen and (min-width: 600px) and (max-width: 768px) {
-  .mainserv {
-    display: flex;
-    justify-content: center;
-  }
-  .serviceWrap {
-    height: 82vh;
-    width: 100%;
-
-    background-image: url("../../Assets/bgimage.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 2px 3px 8px #f8d55689;
-  }
-  .serviceWrap .heading {
-    padding: 50px;
-  }
   .serviceWrap .heading h1 {
     color: #391710;
-    font-size: 40px;
+    font-size: 27px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+    margin-top: 0px;
+
     display: inline;
   }
 
@@ -275,27 +274,27 @@
   }
   .serbtn button {
     padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 30px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 14px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+
     word-spacing: 1px;
   }
   .timepass1 {
     height: 244px;
-    width: 177px;
+    width: 180px;
     background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     box-shadow: 2px 3px 8px rgb(105, 104, 104);
   }
   .timepass1 img {
     width: 100%;
     height: 100%;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     transition: padding 0.9s ease;
   }
   .timepass1 h1 {
@@ -310,9 +309,8 @@
     box-sizing: border-box;
     color: #391710;
     text-align: center;
-    font-size: 24px;
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
+    font-size: 15px;
+    font-family: "Roboto Flex", sans-serif;
   }
   .timepass1:hover img {
     padding-top: 30%;
@@ -321,117 +319,37 @@
     display: block;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 449px) and (max-width: 600px) {
   .mainserv {
     display: flex;
     justify-content: center;
-  }
-  .serviceWrap {
-    height: 79vh;
-    width: 100%;
-
-    background-image: url("../../Assets/bgimage.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 2px 3px 8px #f8d55689;
-  }
-  .serviceWrap .heading {
-    padding: 50px;
+    margin-top: -61px;
   }
   .serviceWrap .heading h1 {
     color: #391710;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     word-spacing: 3px;
-    border-bottom: 3px solid #391710;
+
     display: inline;
   }
-
-  .serWrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .serbtn {
-    padding: 30px;
-  }
-  .serbtn button {
-    padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 30px;
-    border-radius: 5px;
-    border: 1px solid #f8d556e5;
-    word-spacing: 1px;
-  }
-  #card3 {
-    display: none;
-  }
-  .timepass1 {
-    height: 244px;
-    width: 177px;
-    background-color: rgb(255, 255, 255);
+  .mobileimg{
+    display: block;
     position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 2px 3px 8px rgb(105, 104, 104);
-  }
-  .timepass1 img {
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    transition: padding 0.9s ease;
+    top: -71px;
   }
-  .timepass1 h1 {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #391710;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
-  }
-  .timepass1:hover img {
-    padding-top: 30%;
-  }
-  .timepass1:hover h1 {
+  .homelogo {
     display: block;
-  }
+    position: absolute;
+    top: -6%;
+    height: auto;
+    width: 53%;
+    left: 27%;
 }
-@media screen and (max-width: 450px) {
-  .mainserv {
-    display: flex;
-    justify-content: center;
-  }
-  .serviceWrap {
-    height: 69vh;
-    width: 100%;
-
-    background-image: url("../../Assets/bgimage.jpg");
-    background-repeat: no-repeat;
-    box-shadow: 2px 3px 8px #f8d55689;
-  }
-  .serviceWrap .heading {
-    padding: 50px;
-  }
-  .serviceWrap .heading h1 {
-    color: #391710;
-    font-size: 20px;
-    font-weight: bold;
-    word-spacing: 3px;
-    border-bottom: 2px solid #391710;
-    display: inline;
-  }
-
   .serWrapper {
-    display: flex;
+    display: none;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -440,53 +358,89 @@
   }
   .serbtn button {
     padding: 10px;
-    background-color: #391710;
-    color: #f8d456;
-    font-family: "Tangerine", cursive;
-    font-size: 20px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 13px;
     border-radius: 5px;
-    border: 1px solid #f8d556e5;
+
     word-spacing: 1px;
   }
   #card3,
   #card2 {
     display: none;
   }
-  .timepass1 {
-    height: 200px;
-    width: 172px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    overflow: hidden;
-    border-radius: 50px;
-    box-shadow: 2px 3px 8px rgb(105, 104, 104);
-  }
-  .timepass1 img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50px;
-    transition: padding 0.9s ease;
-  }
-  .timepass1 h1 {
-    display: none;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    margin: 0;
-    padding: 10px;
-    box-sizing: border-box;
-    color: #391710;
-    text-align: center;
-    font-size: 24px;
-    font-family: "Tangerine", cursive;
-    font-weight: bold;
-  }
-  .timepass1:hover img {
-    padding-top: 30%;
-  }
-  .timepass1:hover h1 {
+
+  .mobile-view {
     display: block;
   }
 }
+
+@media screen and  (max-width: 450px) {
+  .mainserv {
+    display: flex;
+    justify-content: center;
+    margin-top: -61px;
+  }
+  .serviceWrap .heading h1 {
+    color: #391710;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 3px;
+  
+    display: inline;
+  }
+  .mobileimg{
+    display: block;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    top: -71px;
+  }
+  .homelogo {
+    display: block;
+    position: absolute;
+    height: auto;
+    width: 46%;
+    top: -3%;
+    left: 29%;
+    /* right: 20px; */
+}
+
+  .serWrapper {
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .serbtn {
+    padding: 30px;
+  }
+  .serbtn button {
+    padding: 10px;
+    background-color: #2f4d4b;
+    color: white;
+    font-family: "Cinzel", serif;
+    font-size: 13px;
+    border-radius: 5px;
+
+    word-spacing: 1px;
+  }
+  #card3,
+  #card2 {
+    display: none;
+  }
+
+  .mobile-view {
+    display: block;
+  }
+}
+/* @media screen and (max-width:326px){
+  .homelogo {
+    display: block;
+    position: absolute;
+    height:275px;
+    width: 275px;
+    top: 11px;
+    left: 33px;
+    /* right: 20px; */
+
