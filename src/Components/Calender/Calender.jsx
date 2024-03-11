@@ -2,6 +2,7 @@ import React from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import { useState, useEffect } from "react";
+import { parseISO } from "date-fns";
 import { databases } from "../../Appwrite/config";
 
 
@@ -29,7 +30,7 @@ console.log(formate)
         process.env.REACT_APP_APPWRITE_COLLECTION_ID1,[
 
       ])  
-      setDateData(x.documents)
+      setDateData(x.documents.map((e)=>({date:parseISO(e.date),status:e.status})))
   } catch (error) {
       console.log(error)
   }
@@ -38,11 +39,9 @@ console.log(formate)
 
 
 
-let v = dateData.map((e)=>{
-  return e.date && e.status
-})
+
 useEffect(()=>{
-setD(v)
+setD(dateData)
 },[])
 
 
