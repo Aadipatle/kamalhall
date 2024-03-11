@@ -70,7 +70,7 @@ const Book = () => {
                   onChange={(e) => setStatus(e.target.value)}
                   required
                 >
-                  <option value="" hidden>
+                  <option value="" hidden required>
                     Select Service
                   </option>
                   <option value="available ">Available</option>
@@ -88,6 +88,7 @@ const Book = () => {
                   value={number}
                   onChange={(e) => setNumber(e.target.value)}
                   placeholder="phone"
+                  required
                 />
               </div>
               <div className="labell">
