@@ -16,7 +16,7 @@ function Calender() {
   
 
   useEffect(() => {
-    setFormate(formate);
+    setFormate([]);
     getDate()
 
 
@@ -71,7 +71,7 @@ console.log(formate)
     const event = formate.find((event) => event === formattedDate);
 
     if (event) {
-      if (event.status === "booked" && !isBeforeToday(date)) {
+      if (event.status === "booked") {
         return "booked";
       }
       return "booked";
