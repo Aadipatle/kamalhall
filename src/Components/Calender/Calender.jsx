@@ -8,7 +8,7 @@ import { databases } from "../../Appwrite/config";
 
 function Calender() {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const [events, setEvents] = useState([]);
+  
   const [dateData, setDateData] = useState([]);
   const [c, setD] = useState([]);
   const [formate, setFormate] = useState([]);
@@ -16,7 +16,7 @@ function Calender() {
   
 
   useEffect(() => {
-    setEvents(formate);
+    setFormate(formate);
     getDate()
 
 
