@@ -1,73 +1,202 @@
-import React from "react";
+// import React from "react";
+// import Calendar from "react-calendar";
+// import "react-calendar/dist/Calendar.css";
+// import { useState, useEffect } from "react";
+// import { parseISO } from "date-fns";
+// import { databases } from "../../Appwrite/config";
+
+
+// function Calender() {
+//   const [selectedDate, setSelectedDate] = useState(new Date());
+  
+//   const [dateData, setDateData] = useState([]);
+//   const [c, setD] = useState([]);
+//   const [formate, setFormate] = useState([]);
+
+  
+
+//   useEffect(() => {
+//     setFormate([]);
+//     getDate()
+
+
+//   }, []);
+
+
+//   const getDate = async () =>{
+
+//     try {
+//       let x = await databases.listDocuments( process.env.REACT_APP_APPWRITE_DATABASE_ID,
+//         process.env.REACT_APP_APPWRITE_COLLECTION_ID1,[
+
+//       ])  
+//       setDateData(x.documents.map((e)=>({date:parseISO(e.date),status:e.status})))
+//   } catch (error) {
+//       console.log(error)
+//   }
+//   }
+
+
+
+
+
+// useEffect(()=>{
+// setD(dateData)
+// },[])
+
+
+// useEffect(() => {
+ 
+//   const convertedDates = dateData.map((e) => new Date(e.date));
+//   setD(convertedDates);
+// }, [dateData]);
+
+// useEffect(() => {
+
+//   const formattedDates = c.map((dtObject) => {
+//     return `${dtObject.getMonth() + 1}/${dtObject.getDate()}/${dtObject.getFullYear()}`;
+//   });
+
+ 
+//   setFormate(formattedDates);
+// }, [c]);
+
+
+
+
+// console.log(formate)
+
+//   const getStatusByDate = (date) => {
+//     const formattedDate = date.toLocaleDateString();
+//     const event = formate.find((event) => event === formattedDate);
+
+//     if (event) {
+//       if (event.status === "booked") {
+//         return "booked";
+//       }
+//       return "booked";
+//     } else if (isBeforeToday(date)) {
+//       return "disabled";
+//     } else {
+//       return "available";
+//     }
+//   };
+
+
+
+//   const isBeforeToday = (date) => {
+//     const today = new Date();
+//     today.setHours(0, 0, 0, 0);
+//     return date < today;
+//   };
+
+//   const tileContent = ({ date, view }) => {
+//     const today = new Date();
+//     if (view === "month") {
+//       const status = getStatusByDate(date);
+//       let backgroundColor;
+//       let textColor = "#e0e0e0";
+//       if (status=== "booked") {
+//         backgroundColor = "red";
+//       } else if (status=== "available") {
+//         backgroundColor = "green";
+//       }
+//        else {
+//         backgroundColor = "#e0e0e0";
+//         textColor = "#888";
+//       }
+
+//       return (
+//         <div
+//           className="custom-tile"
+//           style={{ backgroundColor, color: textColor }}
+         
+//         >
+//           {date.getDate()}
+//         </div>
+//       );
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <Calendar
+//         value={selectedDate}
+//         onChange={setSelectedDate}
+//         tileContent={tileContent}
+//       />
+//     </div>
+//   );
+// }
+
+// export default Calender;
+
+
+
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { useState, useEffect } from "react";
-import { parseISO } from "date-fns";
-import { databases } from "../../Appwrite/config";
+import moment from "moment";
 
+import { databases } from "../../Appwrite/config";
 
 function Calender() {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  
   const [dateData, setDateData] = useState([]);
   const [c, setD] = useState([]);
   const [formate, setFormate] = useState([]);
 
-  
-
   useEffect(() => {
     setFormate([]);
-    getDate()
-
-
+    getDate();
   }, []);
 
-console.log(formate)
-  const getDate = async () =>{
+  console.log(formate);
 
+  const getDate = async () => {
     try {
-      let x = await databases.listDocuments( process.env.REACT_APP_APPWRITE_DATABASE_ID,
-        process.env.REACT_APP_APPWRITE_COLLECTION_ID1,[
+      let x = await databases.listDocuments(
+        process.env.REACT_APP_APPWRITE_DATABASE_ID,
+        process.env.REACT_APP_APPWRITE_COLLECTION_ID1,
+        []
+      );
+      setDateData(
+        x.documents.map((e) => ({
+          date: moment(e.date).toDate(),
+          status: e.status,
+        }))
+      );
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-      ])  
-      setDateData(x.documents.map((e)=>({date:parseISO(e.date),status:e.status})))
-  } catch (error) {
-      console.log(error)
-  }
-  }
+  useEffect(() => {
+    setD(dateData);
+  }, [dateData]);
 
+  useEffect(() => {
+    const convertedDates = dateData.map((e) => moment(e.date).toDate());
+    setD(convertedDates);
+  }, [dateData]);
 
+  useEffect(() => {
+    const formattedDates = c.map((dtObject) => {
+      return `${moment(dtObject).format("M/D/YYYY")}`;
+    });
 
+    setFormate(formattedDates);
+  }, [c]);
 
+  console.log(formate);
 
-useEffect(()=>{
-setD(dateData)
-},[])
-
-
-useEffect(() => {
- 
-  const convertedDates = dateData.map((e) => new Date(e.date));
-  setD(convertedDates);
-}, [dateData]);
-
-useEffect(() => {
-
-  const formattedDates = c.map((dtObject) => {
-    return `${dtObject.getMonth() + 1}/${dtObject.getDate()}/${dtObject.getFullYear()}`;
-  });
-
- 
-  setFormate(formattedDates);
-}, [c]);
-
-
-
-
-console.log(formate)
+  const isBeforeToday = (date) => {
+    const today = moment().startOf("day");
+    return date.isBefore(today);
+  };
 
   const getStatusByDate = (date) => {
-    const formattedDate = date.toLocaleDateString();
+    const formattedDate = date.format("M/D/YYYY");
     const event = formate.find((event) => event === formattedDate);
 
     if (event) {
@@ -82,26 +211,16 @@ console.log(formate)
     }
   };
 
-
-
-  const isBeforeToday = (date) => {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    return date < today;
-  };
-
   const tileContent = ({ date, view }) => {
-    const today = new Date();
     if (view === "month") {
-      const status = getStatusByDate(date);
+      const status = getStatusByDate(moment(date));
       let backgroundColor;
       let textColor = "#e0e0e0";
-      if (status=== "booked") {
+      if (status === "booked") {
         backgroundColor = "red";
-      } else if (status=== "available") {
+      } else if (status === "available") {
         backgroundColor = "green";
-      }
-       else {
+      } else {
         backgroundColor = "#e0e0e0";
         textColor = "#888";
       }
@@ -110,9 +229,8 @@ console.log(formate)
         <div
           className="custom-tile"
           style={{ backgroundColor, color: textColor }}
-         
         >
-          {date.getDate()}
+          {moment(date).format("D")}
         </div>
       );
     }
@@ -130,5 +248,3 @@ console.log(formate)
 }
 
 export default Calender;
-
-
