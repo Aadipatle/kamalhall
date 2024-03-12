@@ -67,7 +67,7 @@ useEffect(() => {
 console.log(formate)
 
   const getStatusByDate = (date) => {
-    const formattedDate = date.toLocaleDateString().split("T")[0];
+    const formattedDate = date.toLocaleDateString();
     const event = formate.find((event) => event === formattedDate);
 
     if (event) {
