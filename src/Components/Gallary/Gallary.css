@@ -163,6 +163,10 @@
         
        
       }
+      .slidevideo{
+        width: 60%;
+        margin-left: 20px;
+      }
       
       .swiperC .slideimg {
         width: 50vw; 

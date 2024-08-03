@@ -2,10 +2,10 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import image1 from "../../Assets/frontImage.jpg";
-import image2 from "../../Assets/sideView.jpg";
-import image3 from "../../Assets/stage.jpeg";
-import image4 from "../../Assets/Chair.jpeg";
-
+import image2 from "../../Assets/video/u5.jpg";
+import image3 from "../../Assets/video/u3.JPG";
+import image4 from "../../Assets/video/u2.JPG";
+ 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

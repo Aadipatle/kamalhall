@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../Assets/Chair.jpeg";
+import image from "../../Assets/newImg/n7.JPG";
 import {useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Aos from "aos";

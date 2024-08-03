@@ -39,7 +39,7 @@ function Header() {
         <div className={drawerOpen ? "bar open" : "bar"}></div>
         <div className={drawerOpen ? "bar open" : "bar"}></div>
       </div>
-
+ 
       <div className="icon">
         <a href=" https://wa.me/+919209841329">
           <img src={whatsapp} alt="wht" />

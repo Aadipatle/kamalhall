@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import "./about.css";
 import image from "../../Assets/Group 46.jpg";
-import frontimg from "../../Assets/frontImage.jpg";
+import frontimg from "../../Assets/video/u5.jpg";
 import chair from "../../Assets/Chair.jpeg";
 import top from "../../Assets/topView.jpg";
 import mobile from '../../Assets/mobileFrontImage.jpg'

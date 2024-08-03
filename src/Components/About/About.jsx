@@ -1,6 +1,6 @@
 import React from "react";
 import {useState, useEffect } from "react";
-import image from "../../Assets/frontImage.jpg";
+import image from "../../Assets/video/u5.jpg";
 import "./About.css";
 import { Link } from "react-router-dom";
 import Aos from "aos";
